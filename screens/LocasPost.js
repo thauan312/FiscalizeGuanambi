@@ -50,7 +50,6 @@ render() {
           AVANÇAR
         </Button>  
     </View>
-    
   );
 }
 }
