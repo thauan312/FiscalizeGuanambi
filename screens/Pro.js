@@ -45,7 +45,7 @@ export default class Pro extends React.Component {
               shadowless
               style={styles.button}
               color={materialTheme.COLORS.BUTTON_COLOR}
-              onPress={() => { this.calcular();  navigation.navigate('LocalPost')}}
+              onPress={() => { this.calcular();  navigation.navigate('Addimg')}}
               //onPress={() => navigation.navigate('LocalPost')}
               >
               AVANÇAR

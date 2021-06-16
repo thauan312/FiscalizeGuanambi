@@ -12,6 +12,7 @@ import ProfileScreen from '../screens/Perfil';
 import ProScreen from '../screens/Pro';
 import LocalPostScreen from '../screens/LocasPost';
 import SettingsScreen from '../screens/Ajustes';
+import AddimgScreen from '../screens/Addimg';
 import Novo from '../screens/NewPost';
 import CustomDrawerContent from './Menu';
 import { Icon, Header } from '../components';
@@ -82,6 +83,26 @@ function ProStack(props) {
       <Stack.Screen
         name="Pro"
         component={ProScreen}
+       options={{
+         header: ({ }) => (
+            <Header title="NewPost" />
+          )
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+function AddimgStack(props) {
+  return (
+    <Stack.Navigator
+      initialRouteName="Addimg"
+      mode="card"
+      headerMode="screen"
+    >
+      <Stack.Screen
+        name="Addimg"
+        component={AddimgScreen}
        options={{
          header: ({ }) => (
             <Header title="NewPost" />
@@ -219,6 +240,11 @@ function AppStack(props) {
       <Drawer.Screen
         name="Pro"
         component={ProStack}
+      />
+
+      <Drawer.Screen
+        name="Addimg"
+        component={AddimgStack}
       />
       <Drawer.Screen
         name="LocalPost"
