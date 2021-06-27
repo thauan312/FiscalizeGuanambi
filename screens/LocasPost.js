@@ -15,8 +15,13 @@ export default class Pro extends React.Component {
     }
   }
 
+
+  calcular = () => {
+
+  }
+
 render() {
-  const GOOGLE_PLACES_API_KEY = 'AIzaSyDCADpmxm04-VSWGyCK7knDXe7sBxYhcWo'; // never save your real api key in a snack!
+  //const GOOGLE_PLACES_API_KEY = 'AIzaSyDCADpmxm04-VSWGyCK7knDXe7sBxYhcWo'; 
   const { navigation } = this.props;
   
   return (
@@ -44,8 +49,8 @@ render() {
           shadowless
           style={styles.button}
           color={materialTheme.COLORS.BUTTON_COLOR}
-          onPress={() => { navigation.navigate('Início'); alert("Publicação realizada com sucesso!")}}
-          //onPress={() => navigation.navigate('LocalPost')}
+          onPress={() => { this.calcular(); navigation.navigate('Início'); alert("Publicação realizada com sucesso!")}}
+
           >
           AVANÇAR
         </Button>  

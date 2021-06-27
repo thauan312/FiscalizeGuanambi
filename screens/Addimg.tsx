@@ -136,7 +136,7 @@ export default function App() {
                     <Button
                       shadowless
                       color={materialTheme.COLORS.BUTTON_COLOR}
-                      onPress={() => navigation.navigate('LocalPost')}
+                      onPress={() => navigation.navigate('Início')}
                     >
                         Salvar
                     </Button>
