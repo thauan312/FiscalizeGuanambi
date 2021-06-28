@@ -19,8 +19,7 @@ export default class Pro extends React.Component {
   }
 
   calcular = () => {
-    console.log(this.state.titulo);
-    console.log(this.state.detalhes);
+    console.log(this.state);
 
   }
   
@@ -40,7 +39,7 @@ export default class Pro extends React.Component {
             </Text>
             <Input
               name="titulo"
-              onChangeText={(text) => this.setState({titulo:text})}
+              onChangeText={(text) => this.state={...this.state,titulo: text}}
               right
               color="black"
               placeholder="Titulo"
@@ -66,7 +65,7 @@ export default class Pro extends React.Component {
             </Text>
             <Input
               name="detalhes"
-              onChangeText={(text) => this.setState({detalhes:text})}
+              onChangeText={(text) => this.state={...this.state,detalhes: text}}
               right
               color="black"
               placeholder="Descrição"
